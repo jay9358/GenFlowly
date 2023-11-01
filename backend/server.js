@@ -6,7 +6,12 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 app.use(express.json());
-app.use(cors()); // Corrected line
+const corsOptions = {
+    origin: 'https://gen-flowly.vercel.app/',
+  };
+  
+  app.use(cors(corsOptions));
+  // Corrected line
 
 // Store your API key as an environment variable
 const API_KEY = process.env.API_KEY;
