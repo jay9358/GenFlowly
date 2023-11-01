@@ -59,7 +59,7 @@ function StockChart({ data }) {
       },
       title: {
         display: true,
-        text: 'Chart.js Line Chart',
+        text: 'Stock Chart',
       },
     },
   };
