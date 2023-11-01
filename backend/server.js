@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 app.use(express.json());
 const corsOptions = {
-    origin: 'https://gen-flowly.vercel.app/',
+    origin: 'https://gen-flowly.vercel.app',
   };
   
   app.use(cors(corsOptions));
