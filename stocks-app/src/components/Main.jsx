@@ -35,7 +35,7 @@ function Main() {
 
   const fetchData = async (stockName, startDate, endDate) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/stock/${stockName}?startDate=${startDate}&endDate=${endDate}`);
+      const response = await axios.get(`https://gen-flowly-kfrp.vercel.app/api/stock/${stockName}?startDate=${startDate}&endDate=${endDate}`);
       if (response.status === 200) {
         const data = response.data;
         setStockData(data);
