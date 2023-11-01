@@ -93,13 +93,14 @@
         flex-direction: column;
     }
     .options{
+        height: 60%;
         width: 100%;
     }
     .chart{
         width: 100%;
 
     }
-    .btn{
-        padding: 0.2em;
+    .btn {
+        padding: 0.6em 1em;
     }
    }
