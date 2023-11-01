@@ -15,7 +15,9 @@ const corsOptions = {
 
 // Store your API key as an environment variable
 const API_KEY = process.env.API_KEY;
-
+app.get('/', (req, res) => {
+    res.send('Hey this is my API running 🥳')
+  })
 app.get('/api/stock/:symbol', async (req, res) => {
   const symbol = req.params.symbol;
   const startDate = req.query.startDate || '2023-01-09';
