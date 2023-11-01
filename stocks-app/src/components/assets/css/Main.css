@@ -35,7 +35,7 @@
 .btn {
     --color: #00A97F;
     --color2: rgb(10, 25, 30);
-    padding: 0.6em 1em;
+    padding: 8px 10px ;
     background-color: transparent;
     border-radius: 6px;
     border: .3px solid var(--color);
@@ -100,5 +100,7 @@
         width: 100%;
 
     }
-
+    .btn {
+        padding: 0.6em 1em;
+    }
    }
